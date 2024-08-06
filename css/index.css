@@ -1,0 +1,38 @@
+body {
+    background-color: antiquewhite;
+    color: rgb(123, 63, 0);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    font-weight: lighter;
+    
+}
+
+h2{
+    font-size: x-large;
+    font-weight: bold;
+    color: black;
+}
+
+section {
+    margin: auto;
+    padding: 0%;
+}
+
+a {
+    text-transform: capitalize;
+}
+
+.grid-container p {
+    display: block;
+    padding: 0.75rem;
+    margin: 0.5rem 2rem 0 2.5rem;
+    border: 1px;
+    border-radius: 10px;
+}
+
+#About {
+    text-align: center;
+
+}
