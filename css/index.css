@@ -1,17 +1,18 @@
 body {
-    background-color: antiquewhite;
+    background-color: rgb(244, 209, 164);
     color: rgb(123, 63, 0);
     font-family: 'Times New Roman', Times, serif;
 }
 
 h1 {
     text-align: center;
+
 }
 
 h2{
     font-size: x-large;
-    font-weight: bold;
-    color: black;
+    font-weight: lighter;
+    color: rgb(123, 63, 0);
 }
 
 
@@ -31,23 +32,25 @@ a:hover {
 .experience-container div {
     background-color:burlywood ;
     border-style: solid;
-    border-color: brown;
+    border-color: rgb(207, 140, 52);
     margin-left: 2%;
+    padding: 1rem;
 }
 
 .connect-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 10px;
+    gap: 2rem;
     scroll-margin-top: 2em;
 }
 
 #navigation {
     position: fixed;
     top: 0;
-    background-color: rgb(229, 233, 13);
+    background-color: rgb(207, 140, 52);
     width: 100%;
+    
 }
 
 #navigation ul {
@@ -58,7 +61,7 @@ a:hover {
 }
 
 #name {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif, cursive;
     font-weight: lighter; 
     margin-top: 20%;
     scroll-margin-top: 2em; 
