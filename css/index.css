@@ -1,3 +1,4 @@
+/* desktop-first */
 body {
     background-color: rgb(244, 209, 164);
     color: rgb(123, 63, 0);
@@ -38,12 +39,13 @@ a:hover {
 }
 
 .connect-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display:flex;
+    justify-content: center;   
     gap: 2rem;
     scroll-margin-top: 2em;
 }
+
+
 
 #navigation {
     position: fixed;
@@ -56,12 +58,12 @@ a:hover {
 #navigation ul {
     display: flex;
     gap: 4em;
-    padding-bottom: 0;
+    padding-bottom: 0%;
     list-style: none;
 }
 
 #name {
-    font-family: 'Times New Roman', Times, serif, cursive;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: lighter; 
     margin-top: 20%;
     scroll-margin-top: 2em; 
@@ -78,4 +80,41 @@ a:hover {
 
 #skills {
     scroll-margin-top: 3em;
+}
+
+@media (min-width:500px) and (max-width:1000px) {
+    h2 {
+         font-size: larger;
+         color: blueviolet;
+    }
+    ul {
+        padding: 1rem;
+        background-color: aquamarine;
+    }
+    h1 {
+        font-size: xx-large;
+        font-style: oblique;
+    }
+}
+
+@media (max-width:499px) {
+    h2 {
+         font-size: larger;
+         color: rgb(43, 226, 217);
+    }
+    ul {
+        padding: 1rem;
+        background-color: rgb(255, 98, 36);
+    }
+    h1 {
+        font-size: small;
+        font-style: oblique;
+        
+    }
+    /*#navigation ul {
+        display: list-item;
+    }*/
+    .experience-container {
+        flex-direction: column;
+    }
 }
