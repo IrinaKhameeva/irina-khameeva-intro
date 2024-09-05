@@ -86,8 +86,6 @@ fetch("https://api.github.com/users/IrinaKhameeva/repos")
      }
    })
 
-   
-
    //Handling errors
    .catch((error) => {
     console.error("An error occured:", error);
