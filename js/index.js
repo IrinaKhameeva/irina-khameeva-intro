@@ -54,3 +54,41 @@ messageForm.addEventListener("submit", (e) => {
 
     messageForm.reset();
 });
+
+//Creating fetch for githab repos
+
+fetch("https://api.github.com/users/IrinaKhameeva/repos")
+   .then((response) => {
+      if (!response.ok) {
+        throw new Error("Request failed");
+      } else {
+        return response.json();
+      }
+   })
+
+   //Handle JSON data
+
+   .then((data) => {
+      console.log("json data = ", data);
+      repositories = [...data];
+      console.log ("repositories array =", repositories);
+
+
+    //Display Repositories in List
+   const projectSection = document.getElementById("projects");
+   const projectList = projectSection.getElementsByTagName("ul");
+
+     for (let i=0; i < repositories.length; i++) {
+       const project = document.createElement("li");
+       project.innerText = repositories[i].html_url;
+       console.log(project);
+       projectList[0].appendChild(project)
+     }
+   })
+
+   
+
+   //Handling errors
+   .catch((error) => {
+    console.error("An error occured:", error);
+   });
